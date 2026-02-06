@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(/assets/Banner.png);
+    background-size: clamp(80%, 85vw, 115%);
+    background-repeat: no-repeat;
+    background-position: -25vw center;
+    color: white;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.cabecalho__logo {
+    margin-left: 50px;
+    z-index: 1000;
+}
+
+.menu-hamburguer__linha {
+    width: 100%;
+    height: 4px;
+    background-color: #87db14;
+    margin: 3px 0;
+}
+
+.cabecalho__menu {
+    display: flex;
+    width: 45px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+.main__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.grid__texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 100px;
+}
+
+.grid__texto h1 {
+    font-size: 150px;
+    letter-spacing: 3px;
+    color: #87db14;
+    font-weight: 800;
+    line-height: 0.8;
+}
+
+.grid__texto p {
+    font-size: 75px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+#brief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 75px 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.brief__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    width: 80%;
+}
+
+.bgrid__texto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.bgrid__texto h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.bgrid__texto p {
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.bgrid__texto span {
+    color: #87db14;
+}
+
+.bgrid__texto--buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.bgrid__texto--buttons--primary {
+    background-color: #87db14;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 20vw;
+    transition: all 0.3s ease;
+}
+
+.bgrid__texto--buttons--primary:hover {
+    background-color: #619b10;
+}
+
+.bgrid__texto--buttons--secondary {
+    background-color: transparent;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid #87db14;
+    font-weight: 600;
+    cursor: pointer;
+    width: 20vw;
+    transition: all 0.3s ease;
+}
+
+.bgrid__texto--buttons--secondary:hover {
+    background-color: #87db14;
+    color: black;
+}
+
+.bgrid__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgrid__img img {
+    width: 100%;
+    height: auto;
+}
+
+#apresentacao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 75px 0;
+    height: 100vh;
+    background-image: url(/assets/Background.png);
+    background-size: 120%;
+    background-position: bottom center;
+}
+
+.apresentacao__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #894FFE;
+    background: linear-gradient(90deg, rgba(137, 79, 254, 0) 0%, rgba(13, 13, 13, 0.9) 100%);
+    z-index: 1;
+}
+
+.apresentacao__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    z-index: 2;
+}
+
+.agrid__texto {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.agrid__texto h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+
+.agrid__texto span {
+    color: #87db14;
+}
+
+.agrid__texto p {
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.agrid__texto button {
+    align-self: center;
+    width: 100%;
+}
+
+#features {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 75px 0;
+    height: 100vh;
+    background-image: url(/assets/Background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.badge {
+    width: 400px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.badge-top {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.badge-main {
+    background: #7CFF00;
+    color: white;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    height: 100px;
+    overflow: hidden;
+    background-image: url(/assets/Logo.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-card {
+    width: 200px;
+    height: 200px;
+    border: solid 2px #87db14;
+    padding: 20px;
+    border-radius: 20px
+}
+
+.icon-card svg {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+.fgrid__texto--cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    z-index: 2;
+    gap: 20px;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.features__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #894FFE;
+    background: linear-gradient(90deg, rgba(137, 79, 254, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+
+.fgrid__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fgrid__texto h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.fgrid__texto span {
+    color: #87db14;
+}
+
+#footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
