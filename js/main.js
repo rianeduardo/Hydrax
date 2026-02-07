@@ -1,6 +1,6 @@
 const area = document.getElementById('wrapper');
 
-const trailCount = 15;
+const trailCount = 1;
 const trails = [];
 let isInside = false;
 

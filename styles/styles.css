@@ -49,7 +49,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    cursor: none;
     margin-right: 100px;
 }
 
@@ -364,12 +364,12 @@
 
 .trail {
     position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 2px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
     background-color: #87db14;
     pointer-events: none;
-    animation: infinite 1.5s ease-out rotate;
+    box-shadow: 0 0 25px 5px #87db14;
     transition: opacity 0.25s ease, transform 0.25s ease;
     filter: blur(0.3px);
 }
