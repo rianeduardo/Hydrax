@@ -1,6 +1,6 @@
 const area = document.getElementById('wrapper');
 
-const trailCount = 25;
+const trailCount = 15;
 const trails = [];
 let isInside = false;
 
@@ -47,8 +47,8 @@ area.addEventListener('mousemove', (e) => {
 
 function animate() {
     for (let i = trails.length - 1; i > 0; i--) {
-        trails[i].x += (trails[i - 1].x - trails[i].x) * 0.2;
-        trails[i].y += (trails[i - 1].y - trails[i].y) * 0.2;
+        trails[i].x += (trails[i - 1].x - trails[i].x) * 0.9;
+        trails[i].y += (trails[i - 1].y - trails[i].y) * 0.9;
     }
 
     trails.forEach(t => {

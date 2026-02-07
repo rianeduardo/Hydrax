@@ -369,7 +369,7 @@
     border-radius: 2px;
     background-color: #87db14;
     pointer-events: none;
-    animation: infinite 3s ease-out rotate;
+    animation: infinite 1.5s ease-out rotate;
     transition: opacity 0.25s ease, transform 0.25s ease;
     filter: blur(0.3px);
 }
